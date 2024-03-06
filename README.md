@@ -50,6 +50,10 @@ propios del lenguaje de programación _elixir_.
 
 4. Documenta _en línea_ las funciones relevantes del código, usando
    `@doc`, `@spec`, ...
+   
+5. El código debe compilar sin _warnings_.
+
+6. El código debe pasar los tests antes de hacer un _push_ a _github_.
 
 
 ## Uso del repositorio
