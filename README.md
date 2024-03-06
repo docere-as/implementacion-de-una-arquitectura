@@ -21,7 +21,7 @@ propios del lenguaje de programación _elixir_.
 1. Cubre el apartado _Autor_  de este README.
 
 1. Elige una de las arquitecturas estudiadas en la materia,
-   distribuída o no. La arquitectura cliente/servidor no es elegible.
+   distribuida o no. La arquitectura cliente/servidor no es elegible.
 
 2. Cubre los apartados correspondientes de este README.
 
@@ -60,7 +60,7 @@ propios del lenguaje de programación _elixir_.
    ```
    % Configuración global (todos los repositorios)
    git config --global core.autocrlf true
-   % Configuración lcoal (sólo este repositorio)
+   % Configuración local (sólo este repositorio)
    git config --local core.autocrlf true
    ```
 
@@ -103,7 +103,7 @@ incluir:
   - Diagrama de código: al menos, diagramas de secuencia.
   
 
-Enlaces a los ficheros en formato PNG o PDF que debem estar en el
+Enlaces a los ficheros en formato PNG o PDF que deben estar en el
 directorio `doc/` de este repositorio.
 
 
