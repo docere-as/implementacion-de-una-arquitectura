@@ -54,17 +54,7 @@ propios del lenguaje de programación _elixir_.
 
 ## Uso del repositorio
 
-1. Los usuarios de windows deben configurar el tratamiento de los
-   finales de línea.
-   
-   ```
-   % Configuración global (todos los repositorios)
-   git config --global core.autocrlf true
-   % Configuración local (sólo este repositorio)
-   git config --local core.autocrlf true
-   ```
-
-2. Las github actions comprueban que el código esté formateado con
+1. Las github actions comprueban que el código esté formateado con
    `mix format`. Para mayor comodidad podemos configurar el
    repositorio local para que lo compruebe antes de hacer un commit.
    
