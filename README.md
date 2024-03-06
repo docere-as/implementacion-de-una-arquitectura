@@ -1,7 +1,7 @@
 # Implementación de una arquitectura
 
 En esta práctica debes desarrollar una implementación que demuestre la
-estructura y funcionamiento del una de las arquitecturas que se
+estructura y funcionamiento de una de las arquitecturas que se
 estudian en la materia, a excepción de la arquitectura
 cliente/servidor básica.
 
@@ -23,7 +23,7 @@ propios del lenguaje de programación _elixir_.
 1. Elige una de las arquitecturas estudiadas en la materia,
    distribuida o no. La arquitectura cliente/servidor no es elegible.
 
-2. Cubre los apartados correspondientes de este README.
+2. Cubre el apartado correspondiente de este README.
 
 3. Documenta la arquitectura usando el modelo C4 según se describe en
    el apartado correspondiente de este README.
@@ -40,9 +40,9 @@ propios del lenguaje de programación _elixir_.
 
 ## Requisitos
 
-1. Dado que _elixir_ es un lenguaje orientado a la concurrencia, en
-   general, la forma adecuada de representar los componentes de la
-   arquitectura es mediante procesos.
+1. Dado que _elixir_ es un lenguaje orientado a la concurrencia, la
+   forma adecuada de representar los componentes de la arquitectura es
+   mediante procesos.
    
 2. El código fuente tiene que tener el formato dado por `mix format`.
 
@@ -68,7 +68,7 @@ propios del lenguaje de programación _elixir_.
    `mix format`. Para mayor comodidad podemos configurar el
    repositorio local para que lo compruebe antes de hacer un commit.
    
-   P.e. 
+   P.e. _unix-like_:
    ```
    ---------------------------
    File: .git/hooks/pre-commit
@@ -88,8 +88,11 @@ Nombre, apellidos, login udc
 
 ## Presentación de la arquitectura
 
-Nombre de la arquitectura y descripción de la posible variación
-elegida.
+Nombre de la arquitectura.
+
+Breve descripción de la arquitecura y sus posibles variaciones
+elegidas.
+
 
 
 
