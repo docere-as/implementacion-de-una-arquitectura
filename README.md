@@ -38,6 +38,10 @@ propios del lenguaje de programación _elixir_.
 7. Sube al moodle la url de este repositorio.
 
 
+:note: si deseas una revisión intermedia antes de completar el
+desarrollo de la práctica, solicitala directamente al profesor.
+
+
 ## Requisitos
 
 1. Dado que _elixir_ es un lenguaje orientado a la concurrencia, la
@@ -58,11 +62,25 @@ propios del lenguaje de programación _elixir_.
 
 ## Uso del repositorio
 
-1. Las github actions comprueban que el código esté formateado con
-   `mix format`. Para mayor comodidad podemos configurar el
-   repositorio local para que lo compruebe antes de hacer un commit.
+1. Antes de realizar el primer _push_ es necesario crear el proyecto
+   con `mix new`.
+
+2. Las _github actions_ comprueban parte de los requisitos
+   establecidos cuando iniciamos un _push_.
    
-   P.e. _unix-like_:
+   :warning: Si las comprobaciones fallan, el _push_ se interrumpe y
+   nuestro repositorio en Github **no se actualiza**.
+   
+   Cuando hacemos un _push_ debemos asegurarnos de que tuvo éxito.
+  
+   
+3. Para nuestra comodidad podemos configurar el repositorio local para
+   que realice comprobaciones sobre el proyecto y no nos permita hacer
+   un commit si nos hemos olvidado de algo. Por ejemplo, comprobar
+   que el código tiene formato requerido.
+
+   En un entorno _unix-like_ una opción para hacer esto último es 
+   con el siguiente fichero de configuración:
    ```
    ---------------------------
    File: .git/hooks/pre-commit
@@ -71,6 +89,10 @@ propios del lenguaje de programación _elixir_.
    #!/bin/sh
    mix format --check-formatted
    ```
+   
+2. Si quieres que las _github actions_ usen las mismas versiones de
+   elixir y otp que estás usando en tu máquina de desarrollo,
+   actualiza el fichero `.tool-versions`.
    
 
 # Secciones a cubrir durante el desarrollo de la práctica
@@ -84,7 +106,7 @@ Nombre, apellidos, login udc
 
 Nombre de la arquitectura.
 
-Breve descripción de la arquitecura y sus posibles variaciones
+Breve descripción de la arquitectura y sus posibles variaciones
 elegidas.
 
 
