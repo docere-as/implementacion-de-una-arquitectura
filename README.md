@@ -38,8 +38,9 @@ propios del lenguaje de programación _elixir_.
 7. Sube al moodle la url de este repositorio.
 
 
-:note: si deseas una revisión intermedia antes de completar el
-desarrollo de la práctica, solicitala directamente al profesor.
+>[!NOTE]
+> Si deseas una revisión intermedia antes de completar el
+> desarrollo de la práctica, solicitala directamente al profesor.
 
 
 ## Requisitos
@@ -62,38 +63,67 @@ desarrollo de la práctica, solicitala directamente al profesor.
 
 ## Uso del repositorio
 
-1. Antes de realizar el primer _push_ es necesario crear el proyecto
-   con `mix new`.
+1. Antes de realizar el primer _push_ es conveniente crear el proyecto
+   con `mix new app`.
 
-2. Las _github actions_ comprueban parte de los requisitos
-   establecidos cuando iniciamos un _push_.
+2. El repositorio inicial contiene una _github action_ que realiza
+   comprobaciones automáticas sobre el código del proyecto.
    
-   :warning: Si las comprobaciones fallan, el _push_ se interrumpe y
-   nuestro repositorio en Github **no se actualiza**.
+   Para que esta acción funcione correctamente puede ser necesario
+   configurar los siguientes parámetros:
    
-   Cuando hacemos un _push_ debemos asegurarnos de que tuvo éxito.
-  
+   - Versión de OTP.
    
-3. Para nuestra comodidad podemos configurar el repositorio local para
-   que realice comprobaciones sobre el proyecto y no nos permita hacer
-   un commit si nos hemos olvidado de algo. Por ejemplo, comprobar
-   que el código tiene formato requerido.
+   - Versión de elixir.
+   
+   - Ruta al proyecto dentro del repositorio.
+   
+   Estos parámetros se configuran en el fichero `.config` en la raíz
+   del repositorio.
+   
+   Ejemplo de fichero `.config`:
+   
+   ```
+   OTP_VERSION=25.0.4
+   ELIXIR_VERSION=1.14.1
+   APP_BASE_PATH=app/
+   ```
+   
+3. Para nuestra comodidad también podemos configurar el repositorio
+   local para que realice comprobaciones sobre el proyecto y no nos
+   permita hacer un commit si nos hemos olvidado de algo.
+   
+   Por ejemplo, comprobar que el código compila sin warnings, tiene el
+   formato requerido y pasa los tests. En un entorno _unix-like_ una
+   opción para hacer esto último es con el siguiente fichero:
 
-   En un entorno _unix-like_ una opción para hacer esto último es 
-   con el siguiente fichero de configuración:
    ```
    ---------------------------
    File: .git/hooks/pre-commit
    ---------------------------
    
    #!/bin/sh
+   mix compile --warnings-as-errors
    mix format --check-formatted
+   mix test
    ```
    
-2. Si quieres que las _github actions_ usen las mismas versiones de
-   elixir y otp que estás usando en tu máquina de desarrollo,
-   actualiza el fichero `.tool-versions`.
-   
+## Entrega de la práctica
+
+Al entregar la práctica para su evaluación debes tener en cuenta lo
+siguiente:
+
+- Sube al moodle la url del _commit_ que quieres que se evalúe. Si
+  subes la url del repositorio, se evaluará el último commit de la
+  rama `main`.
+  
+- Los commits para los que la _github action_ original no se haya
+  ejecutado con éxito se consideran **no entregados** y reciven una
+  calificación de **0 puntos**.
+
+- Si quieres una revisión intermedia del proyecto antes de entregarlo,
+  ponte en contacto con el profesor.
+
 
 # Secciones a cubrir durante el desarrollo de la práctica
 
