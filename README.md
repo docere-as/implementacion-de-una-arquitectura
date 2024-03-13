@@ -40,7 +40,7 @@ propios del lenguaje de programación _elixir_.
 
 >[!NOTE]
 > Si deseas una revisión intermedia antes de completar el
-> desarrollo de la práctica, solicitala directamente al profesor.
+> desarrollo de la práctica, solicítala directamente al profesor.
 
 
 ## Requisitos
@@ -118,11 +118,11 @@ siguiente:
   rama `main`.
   
 - Los commits para los que la _github action_ original no se haya
-  ejecutado con éxito se consideran **no entregados** y reciven una
+  ejecutado con éxito se consideran **no entregados** y reciben una
   calificación de **0 puntos**.
 
-- Si quieres una revisión intermedia del proyecto antes de entregarlo,
-  ponte en contacto con el profesor.
+- Si quieres una revisión intermedia del proyecto _antes de
+  finalizarlo_, ponte en contacto con el profesor.
 
 
 # Secciones a cubrir durante el desarrollo de la práctica
